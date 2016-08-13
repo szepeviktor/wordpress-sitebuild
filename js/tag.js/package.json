@@ -1,0 +1,12 @@
+{
+    "name": "tag.js",
+    "version": "0.1.0",
+    "description": "Create HTML",
+    "license": "MIT",
+    "repository": {
+    },
+    "dependencies": {
+        "jsdom": "*",
+        "unit.js": "*"
+    }
+}

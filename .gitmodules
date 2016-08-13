@@ -1,0 +1,6 @@
+[submodule "rootfiles"]
+	path = rootfiles
+	url = git@github.com:szepeviktor/RootFiles.git
+[submodule "wp-generators"]
+	path = wp-generators
+	url = https://github.com/tareq1988/wp-generators.git

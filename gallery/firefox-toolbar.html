@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Firefox toolbar demo</title>
+
+<style type="text/css">
+body {
+    margin: 32px 0 0 0;
+    animation-name: push-down;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+}
+#ff-popup-blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:0 0 0 0;
+    padding: 0 6px;
+    height: 31px;
+    background-color: #FFFFE1;
+    border-bottom: 1px solid #A0A0A0;
+    font-family: 'Nirmala UI', 'Trebuchet MS', 'Calibri', sans-serif;
+    font-size: 12px;
+    line-height: 31px;
+    color: #000;
+    animation-name: slide-down;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+}
+@keyframes slide-down {
+    0% {
+        top: -32px;
+    }
+    100% {
+        top: 0;
+    }
+}
+@keyframes push-down {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 32px;
+    }
+}
+#ff-popup-blocker img {
+    vertical-align: middle;
+    margin-right: 7px;
+}
+#ff-popup-blocker button {
+    float:right;
+    margin: 1px 28px 0 0;
+    font-size: 12px;
+    line-height: 21px;
+}
+#ff-popup-blocker .underlined {
+    text-decoration: underline;
+}
+#ff-toolbar {
+    height: 26px;
+    line-height: 26px;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 0 0 0 220px;
+
+    font-family: 'Nirmala UI', 'Trebuchet MS', 'Calibri', sans-serif;
+    font-size: 14px;
+    color: #858585;
+}
+</style>
+</head>
+<body>
+
+<div id="ff-toolbar">
+    Ügyfélszolgálat: 0620-4242-498 support@szepe.net
+</div>
+
+<div id="ff-popup-blocker">
+    <img alt="firefox-popup-icon.png"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB5UlEQVQoz5WSz2vTYBiA8w8MBiGMHFICG6OHwdg/sNsOgj2IF6mwo/Qkwg6jMg+K/gHv2ksFPZSBbggV98FgaPhmRo0Jq4NO6qFSMkmKNE36I3FNvi9fPGzVInPow3N6eR/ey8sliflfcvX6Afwb9fpBkpgcACRj4iRhjBHKSBzn8jCKSC4PtZPPuTy0uwMAuCoYRaT/I+wFI9c/a/eGfwY7r15fre1OBJQxpOBfd3SjRsZQQimhSMGXB7ZtW5b1UT+62B6DFNz67v0OSByfB5RRSqmm6YQQomnR6mq4uBjOzQULC/1b2e319YsgimOkYMYYpbTVaj17Xg41zV9eHs7OTtpeWqIG4gAgIjFScExIGIZBEBSKJS+b7chyR5b9zU1KyduXO9bdex1Z7t2+yQGA658hBfu+r6qqqqqFYuk0nTYlyQMwJWmwtYUU/NU4NiXpND3PAUB3GCAF94d9z/Mcp1Molhqi2BBFRqlbLjdE8f3Gg6btnA85ALDcAVLwpHoqZQjC3ottpOB39zcMQTh59MQQhCM5xQHAN6ffbHcn/XA9g3neuJP7on9q2k7t4WPM85jnj29cu/z5nq6tvZHlvenpSffT8261wv3tjZ1q5TCzsivOVKamdsWZw8yKU60kifkTd58uTe+ldK8AAAAASUVORK5CYII="
+    >A Firefox megakadályozta, hogy ezt a felhő alalpú tárhelyet megvásárolja.<button><span class="underlined">M</span>egrendelés</button>
+</div>
+
+<br><br><spam>Tolja le az egész oldalt.</spam>
+<br>(html kód végére!)
+
+<script>
+//window.open('popup');
+</script>

@@ -1,0 +1,2 @@
+- detect adblockers
+- show a message
