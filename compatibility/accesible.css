@@ -1,0 +1,55 @@
+/* http://elistariadefaults.s3.amazonaws.com/accesible_style_5.css */
+html, legend {
+	color: #ffffff;
+	background: #000000;
+}
+
+body {
+	font-size: 18px;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px 10px 15px 10px;
+}
+
+a, a:visited, a:active {
+	color: #ffff00;
+	text-decoration: none;
+}
+
+a:hover, a div:hover {
+	color: #000000;
+	background: #ffff00;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a br {
+	display: none;
+}
+
+a, li, p, div {
+	line-height: 1.5em;
+}
+
+p, ul, form {
+	margin-bottom: 1.125em;
+}
+
+table {
+	width: 530px;
+}
+
+textarea {
+	width: 500px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+	width: 400px;
+	margin: 3px 0 5px 3px;
+}
+
+.noacc {
+	display: none;
+}

@@ -1,0 +1,37 @@
+/* Make admin look like the frontend */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 125%;
+}
+h3 {
+    font-size: 14px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+p {
+    margin: 0 0 20px 0;
+}
+
+/* Show hard line breaks (Return symbol) */
+p:after {
+    content: "\023CE";
+}
+
+/* Distinguish linked images */
+a > img {
+    outline: 5px ridge #0085ba;
+}
+
+/* Warn on H1 and H2 */
+h1,
+h2 {
+    color: red !important;
+}
+h1:after,
+h2:after {
+    /*content: " This is NOT for post content";*/
+    content: " Ez NEM bejegyzésbe való";
+    font-size: small;
+}

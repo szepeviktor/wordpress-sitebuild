@@ -9,16 +9,28 @@
 }(jQuery, window))
 
 
-// jQuery plugin
+// jQuery plugin / main jQuery code
 // https://learn.jquery.com/plugins/basic-plugin-creation/
 (function ($) {
 
-    var shade = "#556b2f";
+    var shade = '#556b2f';
 
     $.fn.greenify = function () {
-        this.css("color", shade);
+        this.css('color', shade);
         return this;
     };
 
 }(jQuery));
 // Usage: jQuery('body').greenify();
+
+
+// jQuery document ready
+(function ($) {
+
+    $(function () {
+
+        var ready_message = 'DOM is ready to manipulate.';
+        alert(ready_message);
+    };
+
+}(jQuery));

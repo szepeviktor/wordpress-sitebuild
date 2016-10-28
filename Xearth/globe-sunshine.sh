@@ -6,6 +6,9 @@
 #     view-source:http://nist.time.gov/
 #
 # 23S..23N, 180S..180N
+#
+# ECHO_ONLY=1 ./globe-sunshine.sh
+
 XEARTHS="http://www.time.gov/images/xearths/%s/%s.jpg"
 
 [ "$1" == "-e" ] && ECHO_ONLY="1"

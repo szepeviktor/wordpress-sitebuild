@@ -1,4 +1,4 @@
-## "Pozitív jövőképpel kódolj, ne gányolással startoljunk"
+## "Pozitív jövőképpel kódoljunk, ne gányolással startoljunk"
 
 Szövegszerkesztő beállítások
 
@@ -7,9 +7,9 @@ Szövegszerkesztő beállítások
 - Igazítás 4 szóközzel ✓
 - Sorvégi szóközök törlése ✓
 
-## WordPress-es HTML struktúrák
+## WordPress HTML struktúrák
 
-A `WordPress.html` fájlban kommentként.
+A [WordPress HTML](/WordPress HTML.html) fájlban kommentként.
 
 - language_attributes()
 - bloginfo( 'charset' )
@@ -18,9 +18,10 @@ A `WordPress.html` fájlban kommentként.
 - post_class()
 - posted_on()
 - dynamic_sidebar() + szöveges widget
+- the_post_thumbnail() @TODO -> WordPress HTML.html
 - @TODO comment
 
-## WordPress-es CSS class-ok
+## WordPress CSS class-ok
 
 - .align*
 - .wp-caption.*
