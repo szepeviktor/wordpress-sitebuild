@@ -1,5 +1,16 @@
 # WordPress sitebuild snippets
 
+### Website making steps
+
+1. Graphic design (PSD)
+1. HTML sitebuild
+1. CMS template (WordPress theme)
+1. Plugins
+1. Content
+
+
+@TODO
+
 - http://www.dds.hu/
 - http://truelite.hu/
 

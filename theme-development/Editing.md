@@ -49,6 +49,8 @@ Next time consider entering the content in the WordPress editor
 - From other websites (Project Naptha) invisible elements (div) break your website
 - From PDF files (text, text as image->OCR)
 
+https://github.com/szepeviktor/debian-server-tools/blob/master/image/Upload-image.md
+
 ### Headings
 
 - :
@@ -58,7 +60,6 @@ Next time consider entering the content in the WordPress editor
 - .
 ?
 !
-
 
 If you would like *to give a title* (called subheaders) to paragraphs use Heading3 (H3).
 

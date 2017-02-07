@@ -9,7 +9,7 @@ Szövegszerkesztő beállítások
 
 ## WordPress HTML struktúrák
 
-A [WordPress HTML](/WordPress HTML.html) fájlban kommentként.
+A [WordPress HTML](/WordPress-HTML.html) fájlban kommentként.
 
 - language_attributes()
 - bloginfo( 'charset' )

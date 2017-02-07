@@ -31,7 +31,25 @@ h2 {
 }
 h1:after,
 h2:after {
-    /*content: " This is NOT for post content";*/
-    content: " Ez NEM bejegyzésbe való";
+    /* content: " This is NOT for content"; */
+    content: " Ez NEM tartalomba való";
     font-size: small;
+}
+
+/* Prevent deletion of invisible elements */
+/* And easily spot dirty markup */
+div {
+    padding: 2px;
+    outline: 2px dashed #887BD7;
+}
+/* TinyMCE div-s */
+div.mce-resize-bar,
+div.mce-resizehandle {
+    padding: 0;
+    outline: none;
+}
+span {
+    padding: 2px;
+    margin: 2px;
+    outline: 2px dotted #A9A9A9;
 }
