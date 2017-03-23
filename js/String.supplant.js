@@ -3,7 +3,7 @@ if (typeof String.prototype.supplant !== "function") {
     String.prototype.supplant = function (object) {
         "use strict";
         return this.replace(
-            /{([^{}]*)}/g,
+            /\{([^{}]*)\}/g,
             function (match, p1) {
                 var replacement = object[p1];
                 return typeof replacement === "string"
@@ -13,3 +13,9 @@ if (typeof String.prototype.supplant !== "function") {
         );
     };
 }
+
+/* Test
+var tpl = "Hello {name}!";
+var data = { name: "douglascrockford" };
+console.log(tpl.supplant(data));
+*/

@@ -13,10 +13,10 @@
 // https://learn.jquery.com/plugins/basic-plugin-creation/
 (function ($) {
 
-    var shade = '#556b2f';
+    var shade = "#556b2f";
 
     $.fn.greenify = function () {
-        this.css('color', shade);
+        this.css("color", shade);
         return this;
     };
 
@@ -24,13 +24,10 @@
 // Usage: jQuery('body').greenify();
 
 
-// jQuery document ready
-(function ($) {
+// jQuery document ready (short form)
+jQuery(function ($) {
 
-    $(function () {
+    var ready_message = "DOM is ready to manipulate.";
+    alert(ready_message);
 
-        var ready_message = 'DOM is ready to manipulate.';
-        alert(ready_message);
-    };
-
-}(jQuery));
+});
