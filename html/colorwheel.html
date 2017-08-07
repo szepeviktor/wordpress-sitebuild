@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js" lang="hu">
+<head>
+    <meta charset="utf-8">
+    <title>colorwheel page</title>
+    <meta name="description" content="colorwheel page">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://www.debian.org/favicon.ico" type="image/x-icon">
+
+    <style type="text/css">
+        html, body {
+            background: white;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            position: relative;
+        }
+        #main {
+            /* outline: 2px solid green; */
+            position: absolute;
+            width: 2200px;
+            height: 2200px;
+            top: -1100px;
+            bottom: -1100px;
+            left: -1100px;
+            right: -1100px;
+            margin: auto;
+            background-image: url('./colorwheel.png');
+            /* background-image: url('https://developers.google.com/maps/documentation/images/colorwheel.png'); */
+            background-position: center right;
+            background-repeat: no-repeat;
+            animation-name: spin;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: ease-in-out; */
+            animation-timing-function: linear;
+        }
+        @keyframes spin {
+            0% {
+                transform:rotate(0deg);
+                background-size: 100%;
+            }
+            50% {
+                background-size: 100%;
+                /* background-size: 100%; */
+                background-size: 50%;
+            }
+            100% {
+                transform:rotate(360deg);
+                background-size: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    </div>
+</body>
+</html>
