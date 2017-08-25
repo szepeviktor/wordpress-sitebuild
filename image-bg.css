@@ -1,0 +1,12 @@
+#content > img {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,30,0.3);
+    cursor: pointer;
+    background: linear-gradient(45deg,#efefef 25%,transparent 25%,transparent 75%,#efefef 75%,#efefef), linear-gradient(45deg,#efefef 25%,transparent 25%,transparent 75%,#efefef 75%,#efefef);
+    background-position: 0 0,10px 10px;
+    background-color: white;
+    background-size: 21px 21px;
+}
