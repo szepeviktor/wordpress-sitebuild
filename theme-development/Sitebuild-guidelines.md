@@ -101,3 +101,24 @@ Production
 ```bash
 sass --style compressed --sourcemap=none style.scss style.css
 ```
+
+### CSS order
+
+`wget -qO- https://html.spec.whatwg.org/multipage/ | grep '<span class=secno>4\.[0-9]*</span>[^<]*' -o`
+
+- 4.1 The document element
+- 4.2 Document metadata
+- 4.3 Sections
+- 4.4 Grouping content
+- 4.5 Text-level semantics
+- 4.6 Links
+- 4.7 Edits
+- 4.8 Embedded content
+- 4.9 Tabular data
+- 4.10 Forms
+- 4.11 Interactive elements
+- 4.12 Scripting
+- 4.13 Custom elements
+- (4.14 Common idioms without dedicated elements)
+- (4.15 Disabled elements)
+- (4.16 Matching HTML elements using selectors and CSS)
