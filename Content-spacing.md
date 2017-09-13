@@ -1,4 +1,4 @@
-# Harmónikus térközök egy webhelyen tartalmában
+# Harmónikus térközök egy webhely tartalmában
 
 http://webszabvany.blog.hu/2008/09/28/szoveges_reszek_megjelolese_html_ben
 
@@ -6,7 +6,6 @@ http://webszabvany.blog.hu/2008/09/28/szoveges_reszek_megjelolese_html_ben
 
 - Kiemelés 1 és 2 (fő címsor) figyelmeztetés az `edistor-styles.css`-ben
 - Bekezdés szöveg `<p>`
-- Sortörés `<br>`
 - Kiemelés 3 (szakasz cím) `<h3>`
 - Kiemelés 4 (szakasz cím) `<h4>`
 - Kiemelés 5 (szakasz cím) `<h5>`
@@ -18,6 +17,7 @@ http://webszabvany.blog.hu/2008/09/28/szoveges_reszek_megjelolese_html_ben
 
 ### Inline elemek
 
+- Sortörés `<br>`
 - Felsorolás `<ul>`
 - Számozott lista `<ol>`
 - Hivatkozás `<a>`
