@@ -1,4 +1,4 @@
-(function () {
+function wp_mark_sections() {
     "use strict";
     var bgColor = "lime";
     var page;
@@ -11,6 +11,7 @@
     elements.forEach(function (elem) {
         var div = document.createElement('div');
 
+        div.class = "mark-section";
         div.style.backgroundColor = bgColor;
         div.style.opacity = 0.4;
         div.style.zIndex = 999999;
@@ -30,4 +31,11 @@
 
         page.appendChild(div);
     });
+}
+
+(function () {
+    document.addEventListener( "DOMContentLoaded", function () {
+        var ab = document.querySelector("#wp-admin-bar-mark-sections .ab-item");
+        ab.onclick = function () { wp_mark_sections(); return false; };
+    }, false );
 }());

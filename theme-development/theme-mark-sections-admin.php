@@ -15,6 +15,7 @@ jQuery(document).one("acf/fields/tab/show", function () {
             if (tabButton) {
                 // Activate tab
                 tabButton.click();
+                tabButton.style.backgroundColor = "lime";
                 // Scroll to tab
                 setTimeout(function () {
                     window.scroll(0, jQuery(tabButton).offset().top - 32);
@@ -22,8 +23,21 @@ jQuery(document).one("acf/fields/tab/show", function () {
             }
         }
     }, 0);
-});
+}, 10, 1 );
 EOF;
 
     wp_add_inline_script( 'jquery-core', $script );
 } );
+
+add_action( 'admin_bar_menu', function ( $wp_admin_bar ) {
+    $args = array(
+        'id'    => 'mark-sections',
+        'title' => '<span class="ab-icon dashicons dashicons-admin-appearance"></span>',
+        'href'  => '#mark-sections-script',
+    );
+    $wp_admin_bar->add_node( $args );
+}, 90, 1 );
+
+add_action( 'wp_enqueue_scripts', function () {
+    wp_enqueue_script( 'mu-mark-sections', WPMU_PLUGIN_URL . '/theme-mark-sections.js' );
+}, 10, 0 );

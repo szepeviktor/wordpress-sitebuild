@@ -10,9 +10,11 @@ if (typeof String.prototype.supplant !== "function") {
             /\{([^{}]*)\}/g,
             function (match, p1) {
                 var replacement = object[p1];
-                return typeof replacement === "string"
+                return (
+                    typeof replacement === "string"
                     ? replacement
-                    : match;
+                    : match
+                );
             }
         );
     };
